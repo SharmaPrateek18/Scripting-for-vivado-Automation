@@ -6,10 +6,10 @@ set_property top $argv [current_fileset]
 update_compile_order -fileset sources_1
 
 reset_run synth_1
-launch_runs synth_1 -jobs 30
+launch_runs synth_1 -jobs 8
 
 reset_run impl_1
-launch_runs impl_1 -jobs 30
+launch_runs impl_1 -jobs 8
 
 set x 0
 while {$x !=1} {
