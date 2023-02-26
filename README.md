@@ -1,6 +1,18 @@
 # Scripting-for-vivado-Automation
 
-Note: The Provided TCL script is for Basys3 FPGA board. the user can change the FPGA by changing in the TCL script.
+## Note
+The Provided TCL script is for Basys3 FPGA board. the user can change the FPGA by changing in the TCL script.
+
+# Here are the steps that the script is following:
+- It imports the required libraries: os, shutil, pandas, numpy, and matplotlib.
+- It lists all the Verilog and System Verilog files in the directory.
+- It asks for the user's permission to delete the old files and folders.
+- It creates a new Vivado project using a Tcl script.
+- It adds the Verilog and System Verilog files to the project using another Tcl script.
+- It creates directories for storing Power, Timing, and Utilization reports for each top module.
+- It runs synthesis and implementation for each top module using a Tcl script.
+- It reads the timing and power reports and extracts the required values.
+- It prints the obtained values and writes them to files.
 
 This is a Python script that automates the synthesis and implementation process of Verilog/System Verilog files using Vivado design suite. The script takes in Verilog/System Verilog files from a directory, creates a new Vivado project, adds the files to the project, and runs synthesis and implementation for each top-level module in the files. It also obtains power and timing results from the reports generated after implementation.
 
@@ -20,4 +32,5 @@ Overall, this script provides a convenient way to automate the process of synthe
 
 The modules considered for testing the code are of Carry Look Ahead Adder which are provided in teh repository. They are top_CLA8.v, top_CLA16.v, top_CLA32.v and top_CLA64.v. The outputs obtained are also availble in the repository as Output_of_Automation.csv.
 
-Note: top_CLA64.v is synthesizable but not implementable as the available resources on Basys3 FPGA is not sufficient to meet the verilog code's requirement. Hence, it is not available in the Output_of_Automation.csv file.
+# Note
+top_CLA64.v is synthesizable but not implementable as the available resources on Basys3 FPGA is not sufficient to meet the verilog code's requirement. Hence, it is not available in the Output_of_Automation.csv file.
