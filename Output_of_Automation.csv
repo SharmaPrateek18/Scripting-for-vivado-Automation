@@ -1,0 +1,4 @@
+,Data Path Delay,Logic Delay,Routing Delay,Total Power Consumption,Slice Logic Power Consumption,Signal Power Consumption,Static Power Consumption,DC Power Consumption,Slice LUTs ,LUT as Logic,LUT as Memory,Slice Registers,Register as Flip Flop,Register as Latch,F7 Muxes,F8 Muxes,IBUF,OBUF,LUT 6,LUT 5,LUT 4,LUT 3,LUT 2
+top_CLA8,9.882,4.017,5.866,4.895,0.065,0.167,0.088,4.575,13.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,16.0,9.0,6.0,3.0,3.0,2.0,1.0
+top_CLA16,12.463,4.63,7.833,11.046,0.194,0.5,0.156,10.197,35.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,32.0,17.0,22.0,5.0,8.0,4.0,6.0
+top_CLA32,18.806,4.999,13.808,23.213,0.505,1.749,0.485,20.474,96.0,96.0,0.0,0.0,0.0,0.0,0.0,0.0,64.0,33.0,59.0,15.0,14.0,9.0,26.0
