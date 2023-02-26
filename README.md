@@ -8,7 +8,7 @@ Next, the script prompts the user to confirm if they want to delete the contents
 
 After adding the files, the script creates directories to store the power, timing, and utilization reports for each top-level module. It then runs synthesis and implementation for each module using a TCL script "tcl_run.tcl".
 
-The number of cores the user wants to use for synthesis and implementation of design can be changed by varying the jobs in the "tcl_run.tcl" TCL script. here in teh Program They are taken to be 8.
+The number of cores the user wants to use for synthesis and implementation of design can be changed by varying the jobs in the "tcl_run.tcl" TCL script. here in the Program script They are considered to be 8.
 
 Next, the script extracts timing and power and utilization information from the reports generated for each module and stores them in Data_Path_Delay, Logic_Delay, Routing_Delay, Total_Power_Consumption, Slice_Logic_Power_Consumption, Signal_Power_Consumption, Static_Power_Consumption, and DC_Power_Consumption, Slice_LUTs_1, LUT_as_Logic_1, LUT_as_Memory_1, Slice_Registers_1, Register_as_Flip_Flop_1, Register_as_Latch_1, F7_Muxes_1, F8_Muxes_1, IBUF_1_1, OBUF_1_1, LUT_6_1, LUT_5_1, LUT_4_1, LUT_3_1, LUT_2_1 variables.
 
